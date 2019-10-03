@@ -12,7 +12,7 @@ import PGFramework
 
 
 protocol TopMainViewDelegate: NSObjectProtocol{
-    
+    func tapedCell(tableView: UITableView, indexPath: IndexPath)
 }
 
 extension TopMainViewDelegate {
@@ -29,6 +29,7 @@ extension TopMainView {
     override func awakeFromNib() {
         super.awakeFromNib()
         tableView.dataSource = self
+        tableView.delegate = self
         loadTableViewCellFromXib(tableView: tableView, cellName: "TopMainTableViewCell")
     }
 }
@@ -43,8 +44,11 @@ extension TopMainView: UITableViewDataSource {
         guard let cell: TopMainTableViewCell = tableView.dequeueReusableCell(withIdentifier: "TopMainTableViewCell", for: indexPath) as? TopMainTableViewCell else{return UITableViewCell()}
         return cell
     }
-    
-    
+}
+extension TopMainView: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        delegate?.tapedCell(tableView: tableView, indexPath: indexPath)
+    }
 }
 
 // MARK: - method
