@@ -21,6 +21,8 @@
 		30E9C9012345E8AC005D33FF /* TopMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30E9C8FF2345E8AC005D33FF /* TopMainTableViewCell.xib */; };
 		30E9C9042345ED9A005D33FF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E9C9022345ED9A005D33FF /* SecondViewController.swift */; };
 		30E9C9052345ED9A005D33FF /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30E9C9032345ED9A005D33FF /* SecondViewController.xib */; };
+		30E9C9082345FCE0005D33FF /* SecondMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E9C9062345FCE0005D33FF /* SecondMainView.swift */; };
+		30E9C9092345FCE0005D33FF /* SecondMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30E9C9072345FCE0005D33FF /* SecondMainView.xib */; };
 		5E322E42DEFECAD9B72DB2F1 /* Pods_TableViewTest1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3481A5BB2D4D10D5A310C5 /* Pods_TableViewTest1.framework */; };
 		78F795426B63BD6B2E6C8E80 /* Pods_TableViewTest1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA85FEAEAC6A2C7DF4468C7 /* Pods_TableViewTest1UITests.framework */; };
 		F55EB57A0BB00D1C2B76CEEF /* Pods_TableViewTest1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C16F14FEC5C4F5D2E9EE12 /* Pods_TableViewTest1Tests.framework */; };
@@ -66,6 +68,8 @@
 		30E9C8FF2345E8AC005D33FF /* TopMainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopMainTableViewCell.xib; sourceTree = "<group>"; };
 		30E9C9022345ED9A005D33FF /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		30E9C9032345ED9A005D33FF /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		30E9C9062345FCE0005D33FF /* SecondMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondMainView.swift; sourceTree = "<group>"; };
+		30E9C9072345FCE0005D33FF /* SecondMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondMainView.xib; sourceTree = "<group>"; };
 		82DF4A75F200D5128B5AC4D3 /* Pods-TableViewTest1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewTest1UITests.debug.xcconfig"; path = "Target Support Files/Pods-TableViewTest1UITests/Pods-TableViewTest1UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C3481A5BB2D4D10D5A310C5 /* Pods_TableViewTest1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableViewTest1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C16F14FEC5C4F5D2E9EE12 /* Pods_TableViewTest1Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableViewTest1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +145,8 @@
 				30E9C8FF2345E8AC005D33FF /* TopMainTableViewCell.xib */,
 				30E9C9022345ED9A005D33FF /* SecondViewController.swift */,
 				30E9C9032345ED9A005D33FF /* SecondViewController.xib */,
+				30E9C9062345FCE0005D33FF /* SecondMainView.swift */,
+				30E9C9072345FCE0005D33FF /* SecondMainView.xib */,
 			);
 			path = TableViewTest1;
 			sourceTree = "<group>";
@@ -301,6 +307,7 @@
 				30E9C8D02345E777005D33FF /* Assets.xcassets in Resources */,
 				30E9C9012345E8AC005D33FF /* TopMainTableViewCell.xib in Resources */,
 				30E9C8CE2345E777005D33FF /* Main.storyboard in Resources */,
+				30E9C9092345FCE0005D33FF /* SecondMainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30E9C9002345E8AC005D33FF /* TopMainTableViewCell.swift in Sources */,
+				30E9C9082345FCE0005D33FF /* SecondMainView.swift in Sources */,
 				30E9C8F82345E7EC005D33FF /* TopViewController.swift in Sources */,
 				30E9C8FC2345E820005D33FF /* TopMainView.swift in Sources */,
 				30E9C9042345ED9A005D33FF /* SecondViewController.swift in Sources */,
