@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopViewController" customModule="TableViewTest1" customModuleProvider="target">
             <connections>
+                <outlet property="mainView" destination="F64-QB-4ce" id="K58-Td-CVP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

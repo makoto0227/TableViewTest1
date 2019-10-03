@@ -14,6 +14,7 @@ import PGFramework
 
 // MARK: - Property
 class TopViewController: BaseViewController {
+    @IBOutlet weak var mainView: TopMainView!
     
 }
 
@@ -21,6 +22,7 @@ class TopViewController: BaseViewController {
 extension TopViewController {
     override func loadView() {
         super.loadView()
+        mainView.delegate = self
     }
     
     override func viewDidLoad() {
@@ -33,7 +35,19 @@ extension TopViewController {
 }
 
 // MARK: - Protocol
-extension TopViewController {
+extension TopViewController: TopMainViewDelegate {
+    func tapedCell(tableView: UITableView, indexPath: IndexPath) {
+        switch indexPath.row {
+        case 1...10:
+            let secondViewController = SecondViewController()
+            transitionViewController(from: self, to: secondViewController)
+            animatorManager.navigationType = .push
+            
+        default:
+            break
+        }
+    }
+    
     
 }
 
