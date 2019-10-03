@@ -14,6 +14,9 @@ import PGFramework
 
 // MARK: - Property
 class SecondViewController: BaseViewController {
+    @IBAction func tatchedButton(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
     
 }
 
