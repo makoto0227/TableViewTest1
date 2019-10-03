@@ -17,6 +17,12 @@ class SecondViewController: BaseViewController {
     @IBAction func tatchedButton(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
+    @IBOutlet weak var textField: UITextField!
+    @IBAction func touchedButton(_ sender: UIButton) {
+        label.text = textField.text
+    }
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var mainView: SecondMainView!
     
 }
 
@@ -24,6 +30,7 @@ class SecondViewController: BaseViewController {
 extension SecondViewController {
     override func loadView() {
         super.loadView()
+        mainView.delegate = self
     }
     
     override func viewDidLoad() {
@@ -36,7 +43,11 @@ extension SecondViewController {
 }
 
 // MARK: - Protocol
-extension SecondViewController {
+extension SecondViewController: SecondMainViewDelegate {
+    func touchButton(text: String) {
+        label.text = text
+    }
+    
     
 }
 
